@@ -1,0 +1,2813 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>labs</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e09c6fe8270a76a769ebeeb81bdaa1e7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Index</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./homework.html"> 
+<span class="menu-text">Homework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./labs.html" aria-current="page"> 
+<span class="menu-text">Labs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice.html"> 
+<span class="menu-text">Practice</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/WangJingya1/Wang-Jingya"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="labs\Labexercises\Exercises-Chipotle 1-preview.html"><i class="bi bi-journal-code"></i>Ex2 - Getting and Knowing your Data</a></li><li><a href="labs\Labexercises\Exercises-Occupation 1-preview.html"><i class="bi bi-journal-code"></i>Ex3 - Getting and Knowing your Data</a></li><li><a href="labs\Labexercises\Exercises-World Food Facts 1-preview.html"><i class="bi bi-journal-code"></i>Exercise 1</a></li><li><a href="labs\Labexercises\77fba8e3b056425013930abb11e0a970-preview.html"><i class="bi bi-journal-code"></i>Original dataframe</a></li><li><a href="labs\Labexercises\4.IMDb and Douban top-250 movie datasets-preview.html"><i class="bi bi-journal-code"></i>Regular expressions to extract information</a></li><li><a href="labs\Labexercises\Exercises-chipotle 3-preview.html"><i class="bi bi-journal-code"></i>Visualizing Chipotle's Data</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="exercises-chipotle-1" class="level1">
+<h1>Exercises-Chipotle 1</h1>
+</section>
+<section id="ex2---getting-and-knowing-your-data" class="level1 quarto-embed-nb-cell">
+<h1>Ex2 - Getting and Knowing your Data</h1>
+<p>This time we are going to pull data directly from the internet. Special thanks to: https://github.com/justmarkham for sharing the dataset and materials.</p>
+<section id="step-1.-import-the-necessary-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.-import-the-necessary-libraries">Step 1. Import the necessary libraries</h3>
+<div id="cell-2" class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-2.-import-the-dataset-from-this-address." class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-import-the-dataset-from-this-address.">Step 2. Import the dataset from this <a href="https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv">address</a>.</h3>
+</section>
+<section id="step-3.-assign-it-to-a-variable-called-chipo." class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-assign-it-to-a-variable-called-chipo.">Step 3. Assign it to a variable called chipo.</h3>
+<div id="cell-5" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>chipo <span class="op">=</span> pd.read_csv(url,sep<span class="op">=</span><span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-4.-see-the-first-10-entries" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-see-the-first-10-entries">Step 4. See the first 10 entries</h3>
+<div id="cell-7" class="cell" data-scrolled="false" data-execution_count="52">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span><span class="st">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(url,sep<span class="op">=</span><span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="52">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">order_id</th>
+<th data-quarto-table-cell-role="th">quantity</th>
+<th data-quarto-table-cell-role="th">item_name</th>
+<th data-quarto-table-cell-role="th">choice_description</th>
+<th data-quarto-table-cell-role="th">item_price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>1</td>
+<td>Chips and Fresh Tomato Salsa</td>
+<td>NaN</td>
+<td>$2.39</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>1</td>
+<td>Izze</td>
+<td>[Clementine]</td>
+<td>$3.39</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1</td>
+<td>1</td>
+<td>Nantucket Nectar</td>
+<td>[Apple]</td>
+<td>$3.39</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1</td>
+<td>1</td>
+<td>Chips and Tomatillo-Green Chili Salsa</td>
+<td>NaN</td>
+<td>$2.39</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2</td>
+<td>2</td>
+<td>Chicken Bowl</td>
+<td>[Tomatillo-Red Chili Salsa (Hot), [Black Beans...</td>
+<td>$16.98</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3</td>
+<td>1</td>
+<td>Chicken Bowl</td>
+<td>[Fresh Tomato Salsa (Mild), [Rice, Cheese, Sou...</td>
+<td>$10.98</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3</td>
+<td>1</td>
+<td>Side of Chips</td>
+<td>NaN</td>
+<td>$1.69</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>4</td>
+<td>1</td>
+<td>Steak Burrito</td>
+<td>[Tomatillo Red Chili Salsa, [Fajita Vegetables...</td>
+<td>$11.75</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>4</td>
+<td>1</td>
+<td>Steak Soft Tacos</td>
+<td>[Tomatillo Green Chili Salsa, [Pinto Beans, Ch...</td>
+<td>$9.25</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>5</td>
+<td>1</td>
+<td>Steak Burrito</td>
+<td>[Fresh Tomato Salsa, [Rice, Black Beans, Pinto...</td>
+<td>$9.25</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-5.-what-is-the-number-of-observations-in-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-what-is-the-number-of-observations-in-the-dataset">Step 5. What is the number of observations in the dataset?</h3>
+<div id="cell-9" class="cell" data-execution_count="53">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Solution 1</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>row_count <span class="op">=</span> <span class="bu">len</span>(df)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(row_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4622</code></pre>
+</div>
+</div>
+<div id="cell-10" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Solution 2</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 4622 entries, 0 to 4621
+Data columns (total 5 columns):
+ #   Column              Non-Null Count  Dtype 
+---  ------              --------------  ----- 
+ 0   order_id            4622 non-null   int64 
+ 1   quantity            4622 non-null   int64 
+ 2   item_name           4622 non-null   object
+ 3   choice_description  3376 non-null   object
+ 4   item_price          4622 non-null   object
+dtypes: int64(2), object(3)
+memory usage: 180.7+ KB</code></pre>
+</div>
+</div>
+</section>
+<section id="step-6.-what-is-the-number-of-columns-in-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-what-is-the-number-of-columns-in-the-dataset">Step 6. What is the number of columns in the dataset?</h3>
+<div id="cell-12" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>number_of_columns <span class="op">=</span> <span class="bu">len</span>(df.columns)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(number_of_columns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5</code></pre>
+</div>
+</div>
+</section>
+<section id="step-7.-print-the-name-of-all-the-columns." class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-print-the-name-of-all-the-columns.">Step 7. Print the name of all the columns.</h3>
+<div id="cell-14" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>Index(['order_id', 'quantity', 'item_name', 'choice_description',
+       'item_price'],
+      dtype='object')</code></pre>
+</div>
+</div>
+</section>
+<section id="step-8.-how-is-the-dataset-indexed" class="level3">
+<h3 class="anchored" data-anchor-id="step-8.-how-is-the-dataset-indexed">Step 8. How is the dataset indexed?</h3>
+<div id="cell-16" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df.index</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>RangeIndex(start=0, stop=4622, step=1)</code></pre>
+</div>
+</div>
+</section>
+<section id="step-9.-which-was-the-most-ordered-item" class="level3">
+<h3 class="anchored" data-anchor-id="step-9.-which-was-the-most-ordered-item">Step 9. Which was the most-ordered item?</h3>
+<div id="cell-18" class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>data_sorted <span class="op">=</span> df.groupby([<span class="st">"item_name"</span>]).<span class="bu">sum</span>().sort_values([<span class="st">"quantity"</span>],ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>max_value <span class="op">=</span> data_sorted.head(<span class="dv">1</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(max_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              order_id  quantity  \
+item_name                          
+Chicken Bowl    713926       761   
+
+                                             choice_description  \
+item_name                                                         
+Chicken Bowl  [Tomatillo-Red Chili Salsa (Hot), [Black Beans...   
+
+                                                     item_price  
+item_name                                                        
+Chicken Bowl  $16.98 $10.98 $11.25 $8.75 $8.49 $11.25 $8.75 ...  </code></pre>
+</div>
+</div>
+</section>
+<section id="step-10.-for-the-most-ordered-item-how-many-items-were-ordered" class="level3">
+<h3 class="anchored" data-anchor-id="step-10.-for-the-most-ordered-item-how-many-items-were-ordered">Step 10. For the most-ordered item, how many items were ordered?</h3>
+<div id="cell-20" class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>data_sorted <span class="op">=</span> df.groupby([<span class="st">"item_name"</span>]).<span class="bu">sum</span>().sort_values([<span class="st">"quantity"</span>],ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>max_value <span class="op">=</span> data_sorted.head(<span class="dv">1</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(max_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              order_id  quantity  \
+item_name                          
+Chicken Bowl    713926       761   
+
+                                             choice_description  \
+item_name                                                         
+Chicken Bowl  [Tomatillo-Red Chili Salsa (Hot), [Black Beans...   
+
+                                                     item_price  
+item_name                                                        
+Chicken Bowl  $16.98 $10.98 $11.25 $8.75 $8.49 $11.25 $8.75 ...  </code></pre>
+</div>
+</div>
+</section>
+<section id="step-11.-what-was-the-most-ordered-item-in-the-choice_description-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-11.-what-was-the-most-ordered-item-in-the-choice_description-column">Step 11. What was the most ordered item in the choice_description column?</h3>
+<div id="cell-22" class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>data_sorted <span class="op">=</span> df.groupby([<span class="st">"choice_description"</span>]).<span class="bu">sum</span>().sort_values([<span class="st">"quantity"</span>],ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>max_value <span class="op">=</span> data_sorted.head(<span class="dv">1</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(max_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                    order_id  quantity  \
+choice_description                       
+[Diet Coke]           123455       159   
+
+                                                            item_name  \
+choice_description                                                      
+[Diet Coke]         Canned SodaCanned SodaCanned Soda6 Pack Soft D...   
+
+                                                           item_price  
+choice_description                                                     
+[Diet Coke]         $2.18 $1.09 $1.09 $6.49 $2.18 $1.25 $1.09 $6.4...  </code></pre>
+</div>
+</div>
+</section>
+<section id="step-12.-how-many-items-were-orderd-in-total" class="level3">
+<h3 class="anchored" data-anchor-id="step-12.-how-many-items-were-orderd-in-total">Step 12. How many items were orderd in total?</h3>
+<div id="cell-24" class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>total_sum_a <span class="op">=</span> df[<span class="st">'quantity'</span>].<span class="bu">sum</span>()</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(total_sum_a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>4972</code></pre>
+</div>
+</div>
+</section>
+<section id="step-13.-turn-the-item-price-into-a-float" class="level3">
+<h3 class="anchored" data-anchor-id="step-13.-turn-the-item-price-into-a-float">Step 13. Turn the item price into a float</h3>
+<section id="step-13.a.-check-the-item-price-type" class="level4">
+<h4 class="anchored" data-anchor-id="step-13.a.-check-the-item-price-type">Step 13.a. Check the item price type</h4>
+<div id="cell-27" class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>type_a <span class="op">=</span> df[<span class="st">'item_price'</span>].dtype</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(type_a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>object</code></pre>
+</div>
+</div>
+</section>
+<section id="step-13.b.-create-a-lambda-function-and-change-the-type-of-item-price" class="level4">
+<h4 class="anchored" data-anchor-id="step-13.b.-create-a-lambda-function-and-change-the-type-of-item-price">Step 13.b. Create a lambda function and change the type of item price</h4>
+<div id="cell-29" class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'item_price'</span>] <span class="op">=</span> df[<span class="st">'item_price'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x:x.replace(<span class="st">'</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="er"># Exercises-chipotle 3</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>:::{.quarto<span class="op">-</span>embed<span class="op">-</span>nb<span class="op">-</span>cell notebook<span class="op">=</span><span class="st">"D:\code\jiedan</span><span class="ch">\12</span><span class="st">-28</span><span class="ch">\t</span><span class="st">est\labs\Labexercises\Exercises-chipotle 3.ipynb"</span> notebook<span class="op">-</span>title<span class="op">=</span><span class="st">"Visualizing Chipotle's Data"</span> notebook<span class="op">-</span>cellId<span class="op">=</span><span class="st">"cell-0"</span>}</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizing Chipotle's Data</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>This time we are going to pull data directly <span class="im">from</span> the internet.</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>Special thanks to: https:<span class="op">//</span>github.com<span class="op">/</span>justmarkham <span class="cf">for</span> sharing the dataset <span class="kw">and</span> materials.</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a><span class="co">### Step 1. Import the necessary libraries</span></span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>::: {<span class="co">#cell-2 .cell execution_count=13}</span></span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>``` {.python .cell<span class="op">-</span>code}</span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a><span class="co"># set this so the graphs open internally</span></span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="step-2.-import-the-dataset-from-this-address.-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-import-the-dataset-from-this-address.-1">Step 2. Import the dataset from this <a href="https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv">address</a>.</h3>
+</section>
+<section id="step-3.-assign-it-to-a-variable-called-chipo.-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-assign-it-to-a-variable-called-chipo.-1">Step 3. Assign it to a variable called chipo.</h3>
+<div id="cell-5" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>chipo <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'</span>,sep<span class="op">=</span><span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>chipo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">order_id</th>
+<th data-quarto-table-cell-role="th">quantity</th>
+<th data-quarto-table-cell-role="th">item_name</th>
+<th data-quarto-table-cell-role="th">choice_description</th>
+<th data-quarto-table-cell-role="th">item_price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>1</td>
+<td>Chips and Fresh Tomato Salsa</td>
+<td>NaN</td>
+<td>$2.39</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>1</td>
+<td>Izze</td>
+<td>[Clementine]</td>
+<td>$3.39</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1</td>
+<td>1</td>
+<td>Nantucket Nectar</td>
+<td>[Apple]</td>
+<td>$3.39</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1</td>
+<td>1</td>
+<td>Chips and Tomatillo-Green Chili Salsa</td>
+<td>NaN</td>
+<td>$2.39</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2</td>
+<td>2</td>
+<td>Chicken Bowl</td>
+<td>[Tomatillo-Red Chili Salsa (Hot), [Black Beans...</td>
+<td>$16.98</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4617</td>
+<td>1833</td>
+<td>1</td>
+<td>Steak Burrito</td>
+<td>[Fresh Tomato Salsa, [Rice, Black Beans, Sour ...</td>
+<td>$11.75</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">4618</td>
+<td>1833</td>
+<td>1</td>
+<td>Steak Burrito</td>
+<td>[Fresh Tomato Salsa, [Rice, Sour Cream, Cheese...</td>
+<td>$11.75</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4619</td>
+<td>1834</td>
+<td>1</td>
+<td>Chicken Salad Bowl</td>
+<td>[Fresh Tomato Salsa, [Fajita Vegetables, Pinto...</td>
+<td>$11.25</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">4620</td>
+<td>1834</td>
+<td>1</td>
+<td>Chicken Salad Bowl</td>
+<td>[Fresh Tomato Salsa, [Fajita Vegetables, Lettu...</td>
+<td>$8.75</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4621</td>
+<td>1834</td>
+<td>1</td>
+<td>Chicken Salad Bowl</td>
+<td>[Fresh Tomato Salsa, [Fajita Vegetables, Pinto...</td>
+<td>$8.75</td>
+</tr>
+</tbody>
+</table>
+
+<p>4622 rows × 5 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4.-see-the-first-10-entries-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-see-the-first-10-entries-1">Step 4. See the first 10 entries</h3>
+<div id="cell-7" class="cell" data-scrolled="false" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>chipo.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">order_id</th>
+<th data-quarto-table-cell-role="th">quantity</th>
+<th data-quarto-table-cell-role="th">item_name</th>
+<th data-quarto-table-cell-role="th">choice_description</th>
+<th data-quarto-table-cell-role="th">item_price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1</td>
+<td>1</td>
+<td>Chips and Fresh Tomato Salsa</td>
+<td>NaN</td>
+<td>2.39</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1</td>
+<td>1</td>
+<td>Izze</td>
+<td>[Clementine]</td>
+<td>3.39</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1</td>
+<td>1</td>
+<td>Nantucket Nectar</td>
+<td>[Apple]</td>
+<td>3.39</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1</td>
+<td>1</td>
+<td>Chips and Tomatillo-Green Chili Salsa</td>
+<td>NaN</td>
+<td>2.39</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2</td>
+<td>2</td>
+<td>Chicken Bowl</td>
+<td>[Tomatillo-Red Chili Salsa (Hot), [Black Beans...</td>
+<td>16.98</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3</td>
+<td>1</td>
+<td>Chicken Bowl</td>
+<td>[Fresh Tomato Salsa (Mild), [Rice, Cheese, Sou...</td>
+<td>10.98</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3</td>
+<td>1</td>
+<td>Side of Chips</td>
+<td>NaN</td>
+<td>1.69</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>4</td>
+<td>1</td>
+<td>Steak Burrito</td>
+<td>[Tomatillo Red Chili Salsa, [Fajita Vegetables...</td>
+<td>11.75</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>4</td>
+<td>1</td>
+<td>Steak Soft Tacos</td>
+<td>[Tomatillo Green Chili Salsa, [Pinto Beans, Ch...</td>
+<td>9.25</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>5</td>
+<td>1</td>
+<td>Steak Burrito</td>
+<td>[Fresh Tomato Salsa, [Rice, Black Beans, Pinto...</td>
+<td>9.25</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-5.-create-a-histogram-of-the-top-5-items-bought" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-create-a-histogram-of-the-top-5-items-bought">Step 5. Create a histogram of the top 5 items bought</h3>
+<div id="cell-9" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the Series of the names</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> chipo.item_name</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># use the Counter class from collections to create a dictionary with keys(text) and frequency</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>letter_counts <span class="op">=</span> Counter(x)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co"># convert the dictionary to a DataFrame</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame.from_dict(letter_counts, orient<span class="op">=</span><span class="st">'index'</span>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="co"># sort the values from the top to the least value and slice the first 5 items</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[<span class="dv">0</span>].sort_values(ascending <span class="op">=</span> <span class="va">True</span>)[<span class="dv">45</span>:<span class="dv">50</span>]</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a><span class="co"># create the plot</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>df.plot(kind<span class="op">=</span><span class="st">'bar'</span>)</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the title and labels</span></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Items'</span>)</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Number of Times Ordered'</span>)</span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Most ordered Chipotle</span><span class="ch">\'</span><span class="st">s Items'</span>)</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="co"># show the plot</span></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-Exercises-chipotle-3-cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="step-6.-create-a-scatterplot-with-the-number-of-items-orderered-per-order-price" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-create-a-scatterplot-with-the-number-of-items-orderered-per-order-price">Step 6. Create a scatterplot with the number of items orderered per order price</h3>
+<section id="hint-price-should-be-in-the-x-axis-and-items-ordered-in-the-y-axis" class="level4">
+<h4 class="anchored" data-anchor-id="hint-price-should-be-in-the-x-axis-and-items-ordered-in-the-y-axis">Hint: Price should be in the X-axis and Items ordered in the Y-axis</h4>
+<div id="cell-11" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a list of prices</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>chipo.item_price <span class="op">=</span> [<span class="bu">float</span>(value[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>]) <span class="cf">for</span> value <span class="kw">in</span> chipo.item_price] <span class="co"># strip the dollar sign and trailing space</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># then groupby the orders and sum</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>orders <span class="op">=</span> chipo.groupby(<span class="st">'order_id'</span>).<span class="bu">sum</span>()</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co"># creates the scatterplot</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.scatter(orders.quantity, orders.item_price, s = 50, c = 'green')</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>plt.scatter(x <span class="op">=</span> orders.item_price, y <span class="op">=</span> orders.quantity, s <span class="op">=</span> <span class="dv">50</span>, c <span class="op">=</span> <span class="st">'green'</span>)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the title and labels</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Order Price'</span>)</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Items ordered'</span>)</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Number of items ordered per order price'</span>)</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-Exercises-chipotle-3-cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="step-7.-bonus-create-a-question-and-a-graph-to-answer-your-own-question." class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-bonus-create-a-question-and-a-graph-to-answer-your-own-question.">Step 7. BONUS: Create a question and a graph to answer your own question.</h3>
+<div id="cell-13" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 用柱形图显示商品销售额前10的商品</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parse_price(price):</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(price[<span class="dv">1</span>:])</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>item_price_new <span class="op">=</span> chipo[<span class="st">'item_price'</span>].<span class="bu">apply</span>(parse_price)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>chipo[<span class="st">'item_price_new'</span>]<span class="op">=</span>item_price_new</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> chipo.groupby(<span class="st">'item_name'</span>)[<span class="st">'item_price_new'</span>].<span class="bu">sum</span>()</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> a.sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>b.head(<span class="dv">10</span>).plot(kind<span class="op">=</span><span class="st">'bar'</span> , figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-Exercises-chipotle-3-cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<a class="quarto-notebook-link" id="nblink-1" href="labs\Labexercises\Exercises-Chipotle 1-preview.html#cell-0">Source: Ex2 - Getting and Knowing your Data</a></section>
+<section id="exercises-occupation-1" class="level1">
+<h1>Exercises-Occupation 1</h1>
+</section>
+<section id="ex3---getting-and-knowing-your-data" class="level1 quarto-embed-nb-cell">
+<h1>Ex3 - Getting and Knowing your Data</h1>
+<p>This time we are going to pull data directly from the internet. Special thanks to: https://github.com/justmarkham for sharing the dataset and materials.</p>
+<section id="step-1.-import-the-necessary-libraries-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.-import-the-necessary-libraries-1">Step 1. Import the necessary libraries</h3>
+<div id="cell-2" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-2.-import-the-dataset-from-this-address.-2" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-import-the-dataset-from-this-address.-2">Step 2. Import the dataset from this <a href="https://raw.githubusercontent.com/justmarkham/DAT8/master/data/u.user">address</a>.</h3>
+</section>
+<section id="step-3.-assign-it-to-a-variable-called-users-and-use-the-user_id-as-index" class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-assign-it-to-a-variable-called-users-and-use-the-user_id-as-index">Step 3. Assign it to a variable called users and use the ‘user_id’ as index</h3>
+<div id="cell-5" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>users <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/u.user'</span>, </span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>                      sep<span class="op">=</span><span class="st">'|'</span>, index_col<span class="op">=</span><span class="st">'user_id'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-4.-see-the-first-25-entries" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-see-the-first-25-entries">Step 4. See the first 25 entries</h3>
+<div id="cell-7" class="cell" data-scrolled="true" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>users.head(<span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">age</th>
+<th data-quarto-table-cell-role="th">gender</th>
+<th data-quarto-table-cell-role="th">occupation</th>
+<th data-quarto-table-cell-role="th">zip_code</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">user_id</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>24</td>
+<td>M</td>
+<td>technician</td>
+<td>85711</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2</td>
+<td>53</td>
+<td>F</td>
+<td>other</td>
+<td>94043</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3</td>
+<td>23</td>
+<td>M</td>
+<td>writer</td>
+<td>32067</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">4</td>
+<td>24</td>
+<td>M</td>
+<td>technician</td>
+<td>43537</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">5</td>
+<td>33</td>
+<td>F</td>
+<td>other</td>
+<td>15213</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">6</td>
+<td>42</td>
+<td>M</td>
+<td>executive</td>
+<td>98101</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">7</td>
+<td>57</td>
+<td>M</td>
+<td>administrator</td>
+<td>91344</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">8</td>
+<td>36</td>
+<td>M</td>
+<td>administrator</td>
+<td>05201</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9</td>
+<td>29</td>
+<td>M</td>
+<td>student</td>
+<td>01002</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">10</td>
+<td>53</td>
+<td>M</td>
+<td>lawyer</td>
+<td>90703</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">11</td>
+<td>39</td>
+<td>F</td>
+<td>other</td>
+<td>30329</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">12</td>
+<td>28</td>
+<td>F</td>
+<td>other</td>
+<td>06405</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">13</td>
+<td>47</td>
+<td>M</td>
+<td>educator</td>
+<td>29206</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">14</td>
+<td>45</td>
+<td>M</td>
+<td>scientist</td>
+<td>55106</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">15</td>
+<td>49</td>
+<td>F</td>
+<td>educator</td>
+<td>97301</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">16</td>
+<td>21</td>
+<td>M</td>
+<td>entertainment</td>
+<td>10309</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">17</td>
+<td>30</td>
+<td>M</td>
+<td>programmer</td>
+<td>06355</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">18</td>
+<td>35</td>
+<td>F</td>
+<td>other</td>
+<td>37212</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">19</td>
+<td>40</td>
+<td>M</td>
+<td>librarian</td>
+<td>02138</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">20</td>
+<td>42</td>
+<td>F</td>
+<td>homemaker</td>
+<td>95660</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">21</td>
+<td>26</td>
+<td>M</td>
+<td>writer</td>
+<td>30068</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">22</td>
+<td>25</td>
+<td>M</td>
+<td>writer</td>
+<td>40206</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">23</td>
+<td>30</td>
+<td>F</td>
+<td>artist</td>
+<td>48197</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">24</td>
+<td>21</td>
+<td>F</td>
+<td>artist</td>
+<td>94533</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25</td>
+<td>39</td>
+<td>M</td>
+<td>engineer</td>
+<td>55107</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-5.-see-the-last-10-entries" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-see-the-last-10-entries">Step 5. See the last 10 entries</h3>
+<div id="cell-9" class="cell" data-scrolled="true" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>users.tail(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">age</th>
+<th data-quarto-table-cell-role="th">gender</th>
+<th data-quarto-table-cell-role="th">occupation</th>
+<th data-quarto-table-cell-role="th">zip_code</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">user_id</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">934</td>
+<td>61</td>
+<td>M</td>
+<td>engineer</td>
+<td>22902</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">935</td>
+<td>42</td>
+<td>M</td>
+<td>doctor</td>
+<td>66221</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">936</td>
+<td>24</td>
+<td>M</td>
+<td>other</td>
+<td>32789</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">937</td>
+<td>48</td>
+<td>M</td>
+<td>educator</td>
+<td>98072</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">938</td>
+<td>38</td>
+<td>F</td>
+<td>technician</td>
+<td>55038</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">939</td>
+<td>26</td>
+<td>F</td>
+<td>student</td>
+<td>33319</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">940</td>
+<td>32</td>
+<td>M</td>
+<td>administrator</td>
+<td>02215</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">941</td>
+<td>20</td>
+<td>M</td>
+<td>student</td>
+<td>97229</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">942</td>
+<td>48</td>
+<td>F</td>
+<td>librarian</td>
+<td>78209</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">943</td>
+<td>22</td>
+<td>M</td>
+<td>student</td>
+<td>77841</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-6.-what-is-the-number-of-observations-in-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-what-is-the-number-of-observations-in-the-dataset">Step 6. What is the number of observations in the dataset?</h3>
+<div id="cell-11" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>users.shape[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>943</code></pre>
+</div>
+</div>
+</section>
+<section id="step-7.-what-is-the-number-of-columns-in-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-what-is-the-number-of-columns-in-the-dataset">Step 7. What is the number of columns in the dataset?</h3>
+<div id="cell-13" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>users.shape[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>4</code></pre>
+</div>
+</div>
+</section>
+<section id="step-8.-print-the-name-of-all-the-columns." class="level3">
+<h3 class="anchored" data-anchor-id="step-8.-print-the-name-of-all-the-columns.">Step 8. Print the name of all the columns.</h3>
+<div id="cell-15" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>users.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>Index(['age', 'gender', 'occupation', 'zip_code'], dtype='object')</code></pre>
+</div>
+</div>
+</section>
+<section id="step-9.-how-is-the-dataset-indexed" class="level3">
+<h3 class="anchored" data-anchor-id="step-9.-how-is-the-dataset-indexed">Step 9. How is the dataset indexed?</h3>
+<div id="cell-17" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># "the index" (aka "the labels")    </span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 【索引，又被称为标签】</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>users.index</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>Index([  1,   2,   3,   4,   5,   6,   7,   8,   9,  10,
+       ...
+       934, 935, 936, 937, 938, 939, 940, 941, 942, 943],
+      dtype='int64', name='user_id', length=943)</code></pre>
+</div>
+</div>
+</section>
+<section id="step-10.-what-is-the-data-type-of-each-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-10.-what-is-the-data-type-of-each-column">Step 10. What is the data type of each column?</h3>
+<div id="cell-19" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>users.dtypes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>age            int64
+gender        object
+occupation    object
+zip_code      object
+dtype: object</code></pre>
+</div>
+</div>
+</section>
+<section id="step-11.-print-only-the-occupation-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-11.-print-only-the-occupation-column">Step 11. Print only the occupation column</h3>
+<div id="cell-21" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>users.occupation</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="co">#or</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>users[<span class="st">'occupation'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>user_id
+1         technician
+2              other
+3             writer
+4         technician
+5              other
+           ...      
+939          student
+940    administrator
+941          student
+942        librarian
+943          student
+Name: occupation, Length: 943, dtype: object</code></pre>
+</div>
+</div>
+</section>
+<section id="step-12.-how-many-different-occupations-are-in-this-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-12.-how-many-different-occupations-are-in-this-dataset">Step 12. How many different occupations are in this dataset?</h3>
+<div id="cell-23" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>users.occupation.nunique()</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co">#or by using value_counts() which returns the count of unique elements</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="co">#users.occupation.value_counts().count()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>21</code></pre>
+</div>
+</div>
+</section>
+<section id="step-13.-what-is-the-most-frequent-occupation" class="level3">
+<h3 class="anchored" data-anchor-id="step-13.-what-is-the-most-frequent-occupation">Step 13. What is the most frequent occupation?</h3>
+<div id="cell-25" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Because "most" is asked</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>users.occupation.value_counts().head(<span class="dv">1</span>).index[<span class="dv">0</span>]</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="co">#or</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="co">#to have the top 5</span></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="co"># users.occupation.value_counts().head()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>'student'</code></pre>
+</div>
+</div>
+</section>
+<section id="step-14.-summarize-the-dataframe." class="level3">
+<h3 class="anchored" data-anchor-id="step-14.-summarize-the-dataframe.">Step 14. Summarize the DataFrame.</h3>
+<div id="cell-27" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>users.describe() <span class="co">#Notice: by default, only the numeric columns are returned. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">age</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>943.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>34.051962</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">std</td>
+<td>12.192740</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">min</td>
+<td>7.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>25.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>31.000000</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>43.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">max</td>
+<td>73.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-15.-summarize-all-the-columns" class="level3">
+<h3 class="anchored" data-anchor-id="step-15.-summarize-all-the-columns">Step 15. Summarize all the columns</h3>
+<div id="cell-29" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>users.describe(include <span class="op">=</span> <span class="st">"all"</span>) <span class="co">#Notice: By default, only the numeric columns are returned.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">age</th>
+<th data-quarto-table-cell-role="th">gender</th>
+<th data-quarto-table-cell-role="th">occupation</th>
+<th data-quarto-table-cell-role="th">zip_code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">count</td>
+<td>943.000000</td>
+<td>943</td>
+<td>943</td>
+<td>943</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">unique</td>
+<td>NaN</td>
+<td>2</td>
+<td>21</td>
+<td>795</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">top</td>
+<td>NaN</td>
+<td>M</td>
+<td>student</td>
+<td>55414</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">freq</td>
+<td>NaN</td>
+<td>670</td>
+<td>196</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">mean</td>
+<td>34.051962</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">std</td>
+<td>12.192740</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">min</td>
+<td>7.000000</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">25%</td>
+<td>25.000000</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">50%</td>
+<td>31.000000</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">75%</td>
+<td>43.000000</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">max</td>
+<td>73.000000</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-16.-summarize-only-the-occupation-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-16.-summarize-only-the-occupation-column">Step 16. Summarize only the occupation column</h3>
+<div id="cell-31" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>users.occupation.describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>count         943
+unique         21
+top       student
+freq          196
+Name: occupation, dtype: object</code></pre>
+</div>
+</div>
+</section>
+<section id="step-17.-what-is-the-mean-age-of-users" class="level3">
+<h3 class="anchored" data-anchor-id="step-17.-what-is-the-mean-age-of-users">Step 17. What is the mean age of users?</h3>
+<div id="cell-33" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="bu">round</span>(users.age.mean())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>34</code></pre>
+</div>
+</div>
+</section>
+<section id="step-18.-what-is-the-age-with-least-occurrence" class="level3">
+<h3 class="anchored" data-anchor-id="step-18.-what-is-the-age-with-least-occurrence">Step 18. What is the age with least occurrence?</h3>
+<div id="cell-35" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>users.age.value_counts().tail() <span class="co">#7, 10, 11, 66 and 73 years -&gt; only 1 occurrence</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>age
+7     1
+66    1
+11    1
+10    1
+73    1
+Name: count, dtype: int64</code></pre>
+</div>
+</div>
+</section>
+<a class="quarto-notebook-link" id="nblink-2" href="labs\Labexercises\Exercises-Occupation 1-preview.html#cell-0">Source: Ex3 - Getting and Knowing your Data</a></section>
+<section id="exercises-world-food-facts-1" class="level1">
+<h1>Exercises-World Food Facts 1</h1>
+</section>
+<section id="exercise-1" class="level1 quarto-embed-nb-cell">
+<h1>Exercise 1</h1>
+<section id="step-1.-go-to-httpswww.kaggle.comopenfoodfactsworld-food-factsdata" class="level3">
+<h3 class="anchored" data-anchor-id="step-1.-go-to-httpswww.kaggle.comopenfoodfactsworld-food-factsdata">Step 1. Go to https://www.kaggle.com/openfoodfacts/world-food-facts/data</h3>
+</section>
+<section id="step-2.-download-the-dataset-to-your-computer-and-unzip-it." class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-download-the-dataset-to-your-computer-and-unzip-it.">Step 2. Download the dataset to your computer and unzip it.</h3>
+</section>
+<section id="step-3.-use-the-tsv-file-and-assign-it-to-a-dataframe-called-food" class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-use-the-tsv-file-and-assign-it-to-a-dataframe-called-food">Step 3. Use the tsv file and assign it to a dataframe called food</h3>
+<div id="cell-4" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>food <span class="op">=</span> pd.read_csv(<span class="st">'en.openfoodfacts.org.products.tsv'</span>,sep<span class="op">=</span><span class="st">'</span><span class="ch">\t</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="step-4.-see-the-first-5-entries" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-see-the-first-5-entries">Step 4. See the first 5 entries</h3>
+<div id="cell-6" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>food.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">code</th>
+<th data-quarto-table-cell-role="th">url</th>
+<th data-quarto-table-cell-role="th">creator</th>
+<th data-quarto-table-cell-role="th">created_t</th>
+<th data-quarto-table-cell-role="th">created_datetime</th>
+<th data-quarto-table-cell-role="th">last_modified_t</th>
+<th data-quarto-table-cell-role="th">last_modified_datetime</th>
+<th data-quarto-table-cell-role="th">product_name</th>
+<th data-quarto-table-cell-role="th">generic_name</th>
+<th data-quarto-table-cell-role="th">quantity</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">fruits-vegetables-nuts_100g</th>
+<th data-quarto-table-cell-role="th">fruits-vegetables-nuts-estimate_100g</th>
+<th data-quarto-table-cell-role="th">collagen-meat-protein-ratio_100g</th>
+<th data-quarto-table-cell-role="th">cocoa_100g</th>
+<th data-quarto-table-cell-role="th">chlorophyl_100g</th>
+<th data-quarto-table-cell-role="th">carbon-footprint_100g</th>
+<th data-quarto-table-cell-role="th">nutrition-score-fr_100g</th>
+<th data-quarto-table-cell-role="th">nutrition-score-uk_100g</th>
+<th data-quarto-table-cell-role="th">glycemic-index_100g</th>
+<th data-quarto-table-cell-role="th">water-hardness_100g</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>3087</td>
+<td>http://world-en.openfoodfacts.org/product/0000...</td>
+<td>openfoodfacts-contributors</td>
+<td>1474103866</td>
+<td>2016-09-17T09:17:46Z</td>
+<td>1474103893</td>
+<td>2016-09-17T09:18:13Z</td>
+<td>Farine de blé noir</td>
+<td>NaN</td>
+<td>1kg</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>4530</td>
+<td>http://world-en.openfoodfacts.org/product/0000...</td>
+<td>usda-ndb-import</td>
+<td>1489069957</td>
+<td>2017-03-09T14:32:37Z</td>
+<td>1489069957</td>
+<td>2017-03-09T14:32:37Z</td>
+<td>Banana Chips Sweetened (Whole)</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>14.0</td>
+<td>14.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>4559</td>
+<td>http://world-en.openfoodfacts.org/product/0000...</td>
+<td>usda-ndb-import</td>
+<td>1489069957</td>
+<td>2017-03-09T14:32:37Z</td>
+<td>1489069957</td>
+<td>2017-03-09T14:32:37Z</td>
+<td>Peanuts</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>16087</td>
+<td>http://world-en.openfoodfacts.org/product/0000...</td>
+<td>usda-ndb-import</td>
+<td>1489055731</td>
+<td>2017-03-09T10:35:31Z</td>
+<td>1489055731</td>
+<td>2017-03-09T10:35:31Z</td>
+<td>Organic Salted Nut Mix</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>16094</td>
+<td>http://world-en.openfoodfacts.org/product/0000...</td>
+<td>usda-ndb-import</td>
+<td>1489055653</td>
+<td>2017-03-09T10:34:13Z</td>
+<td>1489055653</td>
+<td>2017-03-09T10:34:13Z</td>
+<td>Organic Polenta</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+<p>5 rows × 163 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-5.-what-is-the-number-of-observations-in-the-dataset-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-what-is-the-number-of-observations-in-the-dataset-1">Step 5. What is the number of observations in the dataset?</h3>
+<div id="cell-8" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>food.shape[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>356027</code></pre>
+</div>
+</div>
+</section>
+<section id="step-6.-what-is-the-number-of-columns-in-the-dataset-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-what-is-the-number-of-columns-in-the-dataset-1">Step 6. What is the number of columns in the dataset?</h3>
+<div id="cell-10" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>food.shape[<span class="dv">1</span>]</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>food.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 356027 entries, 0 to 356026
+Columns: 163 entries, code to water-hardness_100g
+dtypes: float64(107), object(56)
+memory usage: 442.8+ MB</code></pre>
+</div>
+</div>
+</section>
+<section id="step-7.-print-the-name-of-all-the-columns.-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-print-the-name-of-all-the-columns.-1">Step 7. Print the name of all the columns.</h3>
+<div id="cell-12" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>food.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>Index(['code', 'url', 'creator', 'created_t', 'created_datetime',
+       'last_modified_t', 'last_modified_datetime', 'product_name',
+       'generic_name', 'quantity',
+       ...
+       'fruits-vegetables-nuts_100g', 'fruits-vegetables-nuts-estimate_100g',
+       'collagen-meat-protein-ratio_100g', 'cocoa_100g', 'chlorophyl_100g',
+       'carbon-footprint_100g', 'nutrition-score-fr_100g',
+       'nutrition-score-uk_100g', 'glycemic-index_100g',
+       'water-hardness_100g'],
+      dtype='object', length=163)</code></pre>
+</div>
+</div>
+</section>
+<section id="step-8.-what-is-the-name-of-105th-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-8.-what-is-the-name-of-105th-column">Step 8. What is the name of 105th column?</h3>
+<div id="cell-14" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>food.columns[<span class="dv">104</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>'-glucose_100g'</code></pre>
+</div>
+</div>
+</section>
+<section id="step-9.-what-is-the-type-of-the-observations-of-the-105th-column" class="level3">
+<h3 class="anchored" data-anchor-id="step-9.-what-is-the-type-of-the-observations-of-the-105th-column">Step 9. What is the type of the observations of the 105th column?</h3>
+<div id="cell-16" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>food.dtypes[food.columns[<span class="dv">104</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>dtype('float64')</code></pre>
+</div>
+</div>
+</section>
+<section id="step-10.-how-is-the-dataset-indexed" class="level3">
+<h3 class="anchored" data-anchor-id="step-10.-how-is-the-dataset-indexed">Step 10. How is the dataset indexed?</h3>
+<div id="cell-18" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>food.index</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<pre><code>RangeIndex(start=0, stop=356027, step=1)</code></pre>
+</div>
+</div>
+</section>
+<section id="step-11.-what-is-the-product-name-of-the-19th-observation" class="level3">
+<h3 class="anchored" data-anchor-id="step-11.-what-is-the-product-name-of-the-19th-observation">Step 11. What is the product name of the 19th observation?</h3>
+<div id="cell-20" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>food.values[<span class="dv">18</span>][<span class="dv">7</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>'Lotus Organic Brown Jasmine Rice'</code></pre>
+</div>
+</div>
+</section>
+<a class="quarto-notebook-link" id="nblink-3" href="labs\Labexercises\Exercises-World Food Facts 1-preview.html#cell-0">Source: Exercise 1</a></section>
+<section id="fba8e3b056425013930abb11e0a970" class="level1">
+<h1>77fba8e3b056425013930abb11e0a970</h1>
+<div class="quarto-embed-nb-cell">
+<div id="cell-0" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib <span class="im">as</span> mpl</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lets_plot <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb74-7"><a href="#cb74-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-8"><a href="#cb74-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-9"><a href="#cb74-9" aria-hidden="true" tabindex="-1"></a>LetsPlot.setup_html(no_js<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-1" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(</span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://raw.githubusercontent.com/aeturrell/core_python/main/plot_style.txt"</span></span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-2" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>data_np <span class="op">=</span> pd.read_excel(</span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"data/doing-economics-datafile-working-in-excel-project-2.xlsx"</span>,</span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a>    usecols<span class="op">=</span><span class="st">"A:Q"</span>,</span>
+<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a>    header<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb76-5"><a href="#cb76-5" aria-hidden="true" tabindex="-1"></a>    index_col<span class="op">=</span><span class="st">"Period"</span>,</span>
+<span id="cb76-6"><a href="#cb76-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb76-7"><a href="#cb76-7" aria-hidden="true" tabindex="-1"></a>data_n <span class="op">=</span> data_np.iloc[:<span class="dv">10</span>, :].copy()</span>
+<span id="cb76-8"><a href="#cb76-8" aria-hidden="true" tabindex="-1"></a>data_p <span class="op">=</span> data_np.iloc[<span class="dv">14</span>:<span class="dv">24</span>, :].copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-3" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>test_data <span class="op">=</span> {</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"City A"</span>: [<span class="fl">14.1</span>, <span class="fl">14.1</span>, <span class="fl">13.7</span>],</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"City B"</span>: [<span class="fl">11.0</span>, <span class="fl">12.6</span>, <span class="fl">12.1</span>],</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Original dataframe</span></span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a>test_df <span class="op">=</span> pd.DataFrame.from_dict(test_data)</span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a><span class="co"># A copy of the dataframe</span></span>
+<span id="cb77-10"><a href="#cb77-10" aria-hidden="true" tabindex="-1"></a>test_copy <span class="op">=</span> test_df.copy()</span>
+<span id="cb77-11"><a href="#cb77-11" aria-hidden="true" tabindex="-1"></a><span class="co"># A pointer to the dataframe</span></span>
+<span id="cb77-12"><a href="#cb77-12" aria-hidden="true" tabindex="-1"></a>test_pointer <span class="op">=</span> test_df</span>
+<span id="cb77-13"><a href="#cb77-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-14"><a href="#cb77-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-15"><a href="#cb77-15" aria-hidden="true" tabindex="-1"></a>test_pointer.iloc[<span class="dv">1</span>, <span class="dv">1</span>] <span class="op">=</span> <span class="dv">99</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-4" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"test_df="</span>)</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>test_df<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"test_copy="</span>)</span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>test_copy<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>test_df=
+   City A  City B
+0    14.1    11.0
+1    14.1    99.0
+2    13.7    12.1
+
+test_copy=
+   City A  City B
+0    14.1    11.0
+1    14.1    12.6
+2    13.7    12.1
+</code></pre>
+</div>
+</div>
+<div id="cell-5" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>data_n.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Index: 10 entries, 1 to 10
+Data columns (total 16 columns):
+ #   Column           Non-Null Count  Dtype 
+---  ------           --------------  ----- 
+ 0   Copenhagen       10 non-null     object
+ 1   Dnipropetrovs’k  10 non-null     object
+ 2   Minsk            10 non-null     object
+ 3   St. Gallen       10 non-null     object
+ 4   Muscat           10 non-null     object
+ 5   Samara           10 non-null     object
+ 6   Zurich           10 non-null     object
+ 7   Boston           10 non-null     object
+ 8   Bonn             10 non-null     object
+ 9   Chengdu          10 non-null     object
+ 10  Seoul            10 non-null     object
+ 11  Riyadh           10 non-null     object
+ 12  Nottingham       10 non-null     object
+ 13  Athens           10 non-null     object
+ 14  Istanbul         10 non-null     object
+ 15  Melbourne        10 non-null     object
+dtypes: object(16)
+memory usage: 1.3+ KB</code></pre>
+</div>
+</div>
+<div id="cell-6" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>data_n <span class="op">=</span> data_n.astype(<span class="st">"double"</span>)</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>data_p <span class="op">=</span> data_p.astype(<span class="st">"double"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-7" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>mean_n_c <span class="op">=</span> data_n.mean(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>mean_p_c <span class="op">=</span> data_p.agg(np.mean, axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-8" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>mean_n_c.plot(ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"Without punishment"</span>)</span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a>mean_p_c.plot(ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"With punishment"</span>)</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Average contributions to the public goods game"</span>)</span>
+<span id="cb84-5"><a href="#cb84-5" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Average contribution"</span>)</span>
+<span id="cb84-6"><a href="#cb84-6" aria-hidden="true" tabindex="-1"></a>ax.legend()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-77fba8e3b056425013930abb11e0a970-cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-9" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>partial_names_list <span class="op">=</span> [<span class="st">"F. Kennedy"</span>, <span class="st">"Lennon"</span>, <span class="st">"Maynard Keynes"</span>, <span class="st">"Wayne"</span>]</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>[<span class="st">"John "</span> <span class="op">+</span> name <span class="cf">for</span> name <span class="kw">in</span> partial_names_list]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>['John F. Kennedy', 'John Lennon', 'John Maynard Keynes', 'John Wayne']</code></pre>
+</div>
+</div>
+<div id="cell-10" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create new dataframe with bars in</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>compare_grps <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>    [mean_n_c.loc[[<span class="dv">1</span>, <span class="dv">10</span>]], mean_p_c.loc[[<span class="dv">1</span>, <span class="dv">10</span>]]],</span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a>    index<span class="op">=</span>[<span class="st">"Without punishment"</span>, <span class="st">"With punishment"</span>],</span>
+<span id="cb87-5"><a href="#cb87-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb87-6"><a href="#cb87-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Rename columns to have 'round' in them</span></span>
+<span id="cb87-7"><a href="#cb87-7" aria-hidden="true" tabindex="-1"></a>compare_grps.columns <span class="op">=</span> [<span class="st">"Round "</span> <span class="op">+</span> <span class="bu">str</span>(i) <span class="cf">for</span> i <span class="kw">in</span> compare_grps.columns]</span>
+<span id="cb87-8"><a href="#cb87-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Swap the column and index variables around with the transpose function, ready for plotting (.T is transpose)</span></span>
+<span id="cb87-9"><a href="#cb87-9" aria-hidden="true" tabindex="-1"></a>compare_grps <span class="op">=</span> compare_grps.T</span>
+<span id="cb87-10"><a href="#cb87-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a bar chart</span></span>
+<span id="cb87-11"><a href="#cb87-11" aria-hidden="true" tabindex="-1"></a>compare_grps.plot.bar(rot<span class="op">=</span><span class="dv">0</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-77fba8e3b056425013930abb11e0a970-cell-12-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-11" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>n_c <span class="op">=</span> data_n.agg([<span class="st">"std"</span>, <span class="st">"var"</span>, <span class="st">"mean"</span>], <span class="dv">1</span>)</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>n_c</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">std</th>
+<th data-quarto-table-cell-role="th">var</th>
+<th data-quarto-table-cell-role="th">mean</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Period</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2.020724</td>
+<td>4.083325</td>
+<td>10.578313</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2.238129</td>
+<td>5.009220</td>
+<td>10.628398</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3</td>
+<td>2.329569</td>
+<td>5.426891</td>
+<td>10.407079</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2.068213</td>
+<td>4.277504</td>
+<td>9.813033</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">5</td>
+<td>2.108329</td>
+<td>4.445049</td>
+<td>9.305433</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">6</td>
+<td>2.240881</td>
+<td>5.021549</td>
+<td>8.454844</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">7</td>
+<td>2.136614</td>
+<td>4.565117</td>
+<td>7.837568</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">8</td>
+<td>2.349442</td>
+<td>5.519880</td>
+<td>7.376388</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">9</td>
+<td>2.413845</td>
+<td>5.826645</td>
+<td>6.392985</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">10</td>
+<td>2.187126</td>
+<td>4.783520</td>
+<td>4.383769</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="cell-12" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>p_c <span class="op">=</span> data_p.agg([<span class="st">"std"</span>, <span class="st">"var"</span>, <span class="st">"mean"</span>], <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-13" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>n_c[<span class="st">"mean"</span>].plot(ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"mean"</span>)</span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a><span class="co"># mean + 2 standard deviations</span></span>
+<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a>(n_c[<span class="st">"mean"</span>] <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> n_c[<span class="st">"std"</span>]).plot(ax<span class="op">=</span>ax, ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="va">None</span>), color<span class="op">=</span><span class="st">"red"</span>, label<span class="op">=</span><span class="st">"±2 s.d."</span>)</span>
+<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a><span class="co"># mean - 2 standard deviations</span></span>
+<span id="cb90-6"><a href="#cb90-6" aria-hidden="true" tabindex="-1"></a>(n_c[<span class="st">"mean"</span>] <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> n_c[<span class="st">"std"</span>]).plot(ax<span class="op">=</span>ax, ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="va">None</span>), color<span class="op">=</span><span class="st">"red"</span>, label<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb90-7"><a href="#cb90-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(data_n.columns)):</span>
+<span id="cb90-8"><a href="#cb90-8" aria-hidden="true" tabindex="-1"></a>    ax.scatter(x<span class="op">=</span>data_n.index, y<span class="op">=</span>data_n.iloc[:, i], color<span class="op">=</span><span class="st">"k"</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb90-9"><a href="#cb90-9" aria-hidden="true" tabindex="-1"></a>ax.legend()</span>
+<span id="cb90-10"><a href="#cb90-10" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Average contribution"</span>)</span>
+<span id="cb90-11"><a href="#cb90-11" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Contribution to public goods game without punishment"</span>)</span>
+<span id="cb90-12"><a href="#cb90-12" aria-hidden="true" tabindex="-1"></a>plt.show()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-77fba8e3b056425013930abb11e0a970-cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-14" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a>p_c[<span class="st">"mean"</span>].plot(ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"mean"</span>)</span>
+<span id="cb91-3"><a href="#cb91-3" aria-hidden="true" tabindex="-1"></a><span class="co"># mean + 2 sd</span></span>
+<span id="cb91-4"><a href="#cb91-4" aria-hidden="true" tabindex="-1"></a>(p_c[<span class="st">"mean"</span>] <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> p_c[<span class="st">"std"</span>]).plot(ax<span class="op">=</span>ax, ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="va">None</span>), color<span class="op">=</span><span class="st">"red"</span>, label<span class="op">=</span><span class="st">"±2 s.d."</span>)</span>
+<span id="cb91-5"><a href="#cb91-5" aria-hidden="true" tabindex="-1"></a><span class="co"># mean - 2 sd</span></span>
+<span id="cb91-6"><a href="#cb91-6" aria-hidden="true" tabindex="-1"></a>(p_c[<span class="st">"mean"</span>] <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> p_c[<span class="st">"std"</span>]).plot(ax<span class="op">=</span>ax, ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="va">None</span>), color<span class="op">=</span><span class="st">"red"</span>, label<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb91-7"><a href="#cb91-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(data_p.columns)):</span>
+<span id="cb91-8"><a href="#cb91-8" aria-hidden="true" tabindex="-1"></a>    ax.scatter(x<span class="op">=</span>data_p.index, y<span class="op">=</span>data_p.iloc[:, i], color<span class="op">=</span><span class="st">"k"</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb91-9"><a href="#cb91-9" aria-hidden="true" tabindex="-1"></a>ax.legend()</span>
+<span id="cb91-10"><a href="#cb91-10" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Average contribution"</span>)</span>
+<span id="cb91-11"><a href="#cb91-11" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Contribution to public goods game with punishment"</span>)</span>
+<span id="cb91-12"><a href="#cb91-12" aria-hidden="true" tabindex="-1"></a>plt.show()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-77fba8e3b056425013930abb11e0a970-cell-16-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-15" class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>data_p.<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.<span class="bu">max</span>() <span class="op">-</span> x.<span class="bu">min</span>(), axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>Period
+1     10.199675
+2     12.185065
+3     12.689935
+4     12.625000
+5     12.140375
+6     12.827541
+7     13.098931
+8     13.482621
+9     13.496754
+10    11.307360
+dtype: float64</code></pre>
+</div>
+</div>
+<div id="cell-16" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A lambda function accepting three inputs, a, b, and c, and calculating the sum of the squares</span></span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a>test_function <span class="op">=</span> <span class="kw">lambda</span> a, b, c: a<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> b<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> c<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Now we apply the function by handing over (in parenthesis) the following inputs: a=3, b=4 and c=5</span></span>
+<span id="cb94-6"><a href="#cb94-6" aria-hidden="true" tabindex="-1"></a>test_function(<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>50</code></pre>
+</div>
+</div>
+<div id="cell-17" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a>range_function <span class="op">=</span> <span class="kw">lambda</span> x: x.<span class="bu">max</span>() <span class="op">-</span> x.<span class="bu">min</span>()</span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a>range_p <span class="op">=</span> data_p.<span class="bu">apply</span>(range_function, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>range_n <span class="op">=</span> data_n.<span class="bu">apply</span>(range_function, axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-18" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>range_p.plot(ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"With punishment"</span>)</span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>range_n.plot(ax<span class="op">=</span>ax, label<span class="op">=</span><span class="st">"Without punishment"</span>)</span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="va">None</span>)</span>
+<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>ax.legend()</span>
+<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Range of contributions to the public goods game"</span>)</span>
+<span id="cb97-7"><a href="#cb97-7" aria-hidden="true" tabindex="-1"></a>plt.show()<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-77fba8e3b056425013930abb11e0a970-cell-20-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-19" class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>funcs_to_apply <span class="op">=</span> [range_function, <span class="st">"max"</span>, <span class="st">"min"</span>, <span class="st">"std"</span>, <span class="st">"mean"</span>]</span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a>summ_p <span class="op">=</span> data_p.<span class="bu">apply</span>(funcs_to_apply, axis<span class="op">=</span><span class="dv">1</span>).rename(columns<span class="op">=</span>{<span class="st">"&lt;lambda&gt;"</span>: <span class="st">"range"</span>})</span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a>summ_n <span class="op">=</span> data_n.<span class="bu">apply</span>(funcs_to_apply, axis<span class="op">=</span><span class="dv">1</span>).rename(columns<span class="op">=</span>{<span class="st">"&lt;lambda&gt;"</span>: <span class="st">"range"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-20" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>summ_n.loc[[<span class="dv">1</span>, <span class="dv">10</span>], :].<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">range</th>
+<th data-quarto-table-cell-role="th">max</th>
+<th data-quarto-table-cell-role="th">min</th>
+<th data-quarto-table-cell-role="th">std</th>
+<th data-quarto-table-cell-role="th">mean</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Period</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>6.14</td>
+<td>14.10</td>
+<td>7.96</td>
+<td>2.02</td>
+<td>10.58</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">10</td>
+<td>7.38</td>
+<td>8.68</td>
+<td>1.30</td>
+<td>2.19</td>
+<td>4.38</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="cell-21" class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>summ_p.loc[[<span class="dv">1</span>, <span class="dv">10</span>], :].<span class="bu">round</span>(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">range</th>
+<th data-quarto-table-cell-role="th">max</th>
+<th data-quarto-table-cell-role="th">min</th>
+<th data-quarto-table-cell-role="th">std</th>
+<th data-quarto-table-cell-role="th">mean</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Period</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>10.20</td>
+<td>16.02</td>
+<td>5.82</td>
+<td>3.21</td>
+<td>10.64</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">10</td>
+<td>11.31</td>
+<td>17.51</td>
+<td>6.20</td>
+<td>3.90</td>
+<td>12.87</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="cell-22" class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pingouin</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Collecting pingouin
+  Downloading pingouin-0.5.5-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: matplotlib in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (3.9.2)
+Requirement already satisfied: numpy in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (1.26.4)
+Requirement already satisfied: pandas&gt;=1.5 in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (2.2.2)
+Collecting pandas-flavor (from pingouin)
+  Downloading pandas_flavor-0.6.0-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: scikit-learn&gt;=1.2 in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (1.5.1)
+Requirement already satisfied: scipy in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (1.13.1)
+Requirement already satisfied: seaborn in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (0.13.2)
+Requirement already satisfied: statsmodels in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (0.14.2)
+Requirement already satisfied: tabulate in c:\users\hp\anaconda3\lib\site-packages (from pingouin) (0.9.0)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in c:\users\hp\anaconda3\lib\site-packages (from pandas&gt;=1.5-&gt;pingouin) (2.9.0.post0)
+Requirement already satisfied: pytz&gt;=2020.1 in c:\users\hp\anaconda3\lib\site-packages (from pandas&gt;=1.5-&gt;pingouin) (2024.1)
+Requirement already satisfied: tzdata&gt;=2022.7 in c:\users\hp\anaconda3\lib\site-packages (from pandas&gt;=1.5-&gt;pingouin) (2023.3)
+Requirement already satisfied: joblib&gt;=1.2.0 in c:\users\hp\anaconda3\lib\site-packages (from scikit-learn&gt;=1.2-&gt;pingouin) (1.4.2)
+Requirement already satisfied: threadpoolctl&gt;=3.1.0 in c:\users\hp\anaconda3\lib\site-packages (from scikit-learn&gt;=1.2-&gt;pingouin) (3.5.0)
+Requirement already satisfied: contourpy&gt;=1.0.1 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (1.2.0)
+Requirement already satisfied: cycler&gt;=0.10 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (0.11.0)
+Requirement already satisfied: fonttools&gt;=4.22.0 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (4.51.0)
+Requirement already satisfied: kiwisolver&gt;=1.3.1 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (1.4.4)
+Requirement already satisfied: packaging&gt;=20.0 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (24.1)
+Requirement already satisfied: pillow&gt;=8 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (10.4.0)
+Requirement already satisfied: pyparsing&gt;=2.3.1 in c:\users\hp\anaconda3\lib\site-packages (from matplotlib-&gt;pingouin) (3.1.2)
+Requirement already satisfied: xarray in c:\users\hp\anaconda3\lib\site-packages (from pandas-flavor-&gt;pingouin) (2023.6.0)
+Requirement already satisfied: patsy&gt;=0.5.6 in c:\users\hp\anaconda3\lib\site-packages (from statsmodels-&gt;pingouin) (0.5.6)
+Requirement already satisfied: six in c:\users\hp\anaconda3\lib\site-packages (from patsy&gt;=0.5.6-&gt;statsmodels-&gt;pingouin) (1.16.0)
+Downloading pingouin-0.5.5-py3-none-any.whl (204 kB)
+Downloading pandas_flavor-0.6.0-py3-none-any.whl (7.2 kB)
+Installing collected packages: pandas-flavor, pingouin
+Successfully installed pandas-flavor-0.6.0 pingouin-0.5.5
+Note: you may need to restart the kernel to use updated packages.</code></pre>
+</div>
+</div>
+<div id="cell-23" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pingouin <span class="im">as</span> pg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-24" class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>pg.ttest(x<span class="op">=</span>data_n.iloc[<span class="dv">0</span>, :], y<span class="op">=</span>data_p.iloc[<span class="dv">0</span>, :])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="29">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">T</th>
+<th data-quarto-table-cell-role="th">dof</th>
+<th data-quarto-table-cell-role="th">alternative</th>
+<th data-quarto-table-cell-role="th">p-val</th>
+<th data-quarto-table-cell-role="th">CI95%</th>
+<th data-quarto-table-cell-role="th">cohen-d</th>
+<th data-quarto-table-cell-role="th">BF10</th>
+<th data-quarto-table-cell-role="th">power</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">T-test</td>
+<td>-0.063782</td>
+<td>30</td>
+<td>two-sided</td>
+<td>0.949567</td>
+<td>[-2.0, 1.87]</td>
+<td>0.02255</td>
+<td>0.337</td>
+<td>0.050437</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="cell-25" class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a>pg.ttest(x<span class="op">=</span>data_n.iloc[<span class="dv">0</span>, :], y<span class="op">=</span>data_p.iloc[<span class="dv">0</span>, :], paired<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">T</th>
+<th data-quarto-table-cell-role="th">dof</th>
+<th data-quarto-table-cell-role="th">alternative</th>
+<th data-quarto-table-cell-role="th">p-val</th>
+<th data-quarto-table-cell-role="th">CI95%</th>
+<th data-quarto-table-cell-role="th">cohen-d</th>
+<th data-quarto-table-cell-role="th">BF10</th>
+<th data-quarto-table-cell-role="th">power</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">T-test</td>
+<td>-0.149959</td>
+<td>15</td>
+<td>two-sided</td>
+<td>0.882795</td>
+<td>[-0.92, 0.8]</td>
+<td>0.02255</td>
+<td>0.258</td>
+<td>0.05082</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-4" href="labs\Labexercises\77fba8e3b056425013930abb11e0a970-preview.html#cell-0">Source: Original dataframe</a></div>
+</section>
+<section id="imdb-and-douban-top-250-movie-datasets" class="level1">
+<h1>4.IMDb and Douban top-250 movie datasets</h1>
+<div class="quarto-embed-nb-cell">
+<div id="cell-0" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-1" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a>imdb_data <span class="op">=</span> pd.read_csv(<span class="st">'IMDB_Top250.csv'</span>)  <span class="co"># Replace with actual file path</span></span>
+<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a>douban_data <span class="op">=</span> pd.read_csv(<span class="st">'douban_top250.csv'</span>)  <span class="co"># Replace with actual file path</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-2" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.request, urllib.error  <span class="co"># for URL requests</span></span>
+<span id="cb108-4"><a href="#cb108-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv  <span class="co"># for saving as CSV</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-3" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Regular expressions to extract information</span></span>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a>findLink <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;a href="(.*?)"&gt;'</span>)  <span class="co"># detail link</span></span>
+<span id="cb109-3"><a href="#cb109-3" aria-hidden="true" tabindex="-1"></a>findImgSrc <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;img.*src="(.*?)"'</span>, re.S)  <span class="co"># image link</span></span>
+<span id="cb109-4"><a href="#cb109-4" aria-hidden="true" tabindex="-1"></a>findTitle <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;span class="title"&gt;(.*)&lt;/span&gt;'</span>)  <span class="co"># movie title</span></span>
+<span id="cb109-5"><a href="#cb109-5" aria-hidden="true" tabindex="-1"></a>findRating <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;span class="rating_num" property="v:average"&gt;(.*)&lt;/span&gt;'</span>)  <span class="co"># rating</span></span>
+<span id="cb109-6"><a href="#cb109-6" aria-hidden="true" tabindex="-1"></a>findJudge <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;span&gt;(\d*)人评价&lt;/span&gt;'</span>)  <span class="co"># number of reviews</span></span>
+<span id="cb109-7"><a href="#cb109-7" aria-hidden="true" tabindex="-1"></a>findInq <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;span class="inq"&gt;(.*)&lt;/span&gt;'</span>)  <span class="co"># summary</span></span>
+<span id="cb109-8"><a href="#cb109-8" aria-hidden="true" tabindex="-1"></a>findBd <span class="op">=</span> re.<span class="bu">compile</span>(<span class="vs">r'&lt;p class=""&gt;(.*?)&lt;/p&gt;'</span>, re.S)  <span class="co"># additional info</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-4" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb110-3"><a href="#cb110-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-4"><a href="#cb110-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load datasets</span></span>
+<span id="cb110-5"><a href="#cb110-5" aria-hidden="true" tabindex="-1"></a>douban_file_path <span class="op">=</span> <span class="st">'douban_top250.csv'</span>  </span>
+<span id="cb110-6"><a href="#cb110-6" aria-hidden="true" tabindex="-1"></a>imdb_file_path <span class="op">=</span> <span class="st">'IMDB_Top250.csv'</span>      </span>
+<span id="cb110-7"><a href="#cb110-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-8"><a href="#cb110-8" aria-hidden="true" tabindex="-1"></a>douban_data <span class="op">=</span> pd.read_csv(douban_file_path, encoding<span class="op">=</span><span class="st">'utf-8'</span>, on_bad_lines<span class="op">=</span><span class="st">'skip'</span>)</span>
+<span id="cb110-9"><a href="#cb110-9" aria-hidden="true" tabindex="-1"></a>imdb_data <span class="op">=</span> pd.read_csv(imdb_file_path, encoding<span class="op">=</span><span class="st">'utf-8'</span>, on_bad_lines<span class="op">=</span><span class="st">'skip'</span>)</span>
+<span id="cb110-10"><a href="#cb110-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-11"><a href="#cb110-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Renaming columns for clarity and merging compatibility</span></span>
+<span id="cb110-12"><a href="#cb110-12" aria-hidden="true" tabindex="-1"></a>douban_data.rename(columns<span class="op">=</span>{</span>
+<span id="cb110-13"><a href="#cb110-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'影片中文名'</span>: <span class="st">'Title'</span>,</span>
+<span id="cb110-14"><a href="#cb110-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'评分'</span>: <span class="st">'Douban_Score'</span>,</span>
+<span id="cb110-15"><a href="#cb110-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'评价数'</span>: <span class="st">'Douban_Reviews'</span>,</span>
+<span id="cb110-16"><a href="#cb110-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'相关信息'</span>: <span class="st">'Douban_Info'</span></span>
+<span id="cb110-17"><a href="#cb110-17" aria-hidden="true" tabindex="-1"></a>}, inplace<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-5" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb111"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>imdb_data.rename(columns<span class="op">=</span>{</span>
+<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Name'</span>: <span class="st">'Title'</span>,</span>
+<span id="cb111-3"><a href="#cb111-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Year'</span>: <span class="st">'Release_Year'</span>,</span>
+<span id="cb111-4"><a href="#cb111-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'IMDB Ranking'</span>: <span class="st">'IMDB_Score'</span>,</span>
+<span id="cb111-5"><a href="#cb111-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Genre'</span>: <span class="st">'IMDB_Genre'</span>,</span>
+<span id="cb111-6"><a href="#cb111-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Director'</span>: <span class="st">'IMDB_Director'</span></span>
+<span id="cb111-7"><a href="#cb111-7" aria-hidden="true" tabindex="-1"></a>}, inplace<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-6" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate average scores for both platforms</span></span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a>douban_avg_score <span class="op">=</span> douban_data[<span class="st">'Douban_Score'</span>].mean()</span>
+<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a>imdb_avg_score <span class="op">=</span> imdb_data[<span class="st">'IMDB_Score'</span>].mean()</span>
+<span id="cb112-4"><a href="#cb112-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-5"><a href="#cb112-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Find overlapping movies by title</span></span>
+<span id="cb112-6"><a href="#cb112-6" aria-hidden="true" tabindex="-1"></a>overlap_movies <span class="op">=</span> pd.merge(douban_data, imdb_data, on<span class="op">=</span><span class="st">'Title'</span>)</span>
+<span id="cb112-7"><a href="#cb112-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-8"><a href="#cb112-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize average scores</span></span>
+<span id="cb112-9"><a href="#cb112-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb112-10"><a href="#cb112-10" aria-hidden="true" tabindex="-1"></a>plt.bar([<span class="st">'Douban'</span>, <span class="st">'IMDb'</span>], [douban_avg_score, imdb_avg_score], alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb112-11"><a href="#cb112-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Average Scores: Douban vs IMDb'</span>)</span>
+<span id="cb112-12"><a href="#cb112-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Average Score'</span>)</span>
+<span id="cb112-13"><a href="#cb112-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb112-14"><a href="#cb112-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-15"><a href="#cb112-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze release year distribution</span></span>
+<span id="cb112-16"><a href="#cb112-16" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb112-17"><a href="#cb112-17" aria-hidden="true" tabindex="-1"></a>douban_data[<span class="st">'Douban_Info'</span>] <span class="op">=</span> douban_data[<span class="st">'Douban_Info'</span>].astype(<span class="bu">str</span>)</span>
+<span id="cb112-18"><a href="#cb112-18" aria-hidden="true" tabindex="-1"></a>douban_years <span class="op">=</span> douban_data[<span class="st">'Douban_Info'</span>].<span class="bu">str</span>.extract(<span class="vs">r'(\d</span><span class="sc">{4}</span><span class="vs">)'</span>).dropna()</span>
+<span id="cb112-19"><a href="#cb112-19" aria-hidden="true" tabindex="-1"></a>douban_years <span class="op">=</span> douban_years[<span class="dv">0</span>].astype(<span class="bu">int</span>).value_counts().sort_index()</span>
+<span id="cb112-20"><a href="#cb112-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-21"><a href="#cb112-21" aria-hidden="true" tabindex="-1"></a>imdb_years <span class="op">=</span> imdb_data[<span class="st">'Release_Year'</span>].value_counts().sort_index()</span>
+<span id="cb112-22"><a href="#cb112-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-23"><a href="#cb112-23" aria-hidden="true" tabindex="-1"></a>douban_years.plot(kind<span class="op">=</span><span class="st">'bar'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span><span class="st">'Douban'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb112-24"><a href="#cb112-24" aria-hidden="true" tabindex="-1"></a>imdb_years.plot(kind<span class="op">=</span><span class="st">'bar'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span><span class="st">'IMDb'</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
+<span id="cb112-25"><a href="#cb112-25" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Release Year Distribution'</span>)</span>
+<span id="cb112-26"><a href="#cb112-26" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
+<span id="cb112-27"><a href="#cb112-27" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Number of Movies'</span>)</span>
+<span id="cb112-28"><a href="#cb112-28" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb112-29"><a href="#cb112-29" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-4.IMDb-and-Douban-top-250-movie-datasets-cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-4.IMDb-and-Douban-top-250-movie-datasets-cell-8-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-7" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze genre distribution</span></span>
+<span id="cb113-2"><a href="#cb113-2" aria-hidden="true" tabindex="-1"></a>imdb_genres <span class="op">=</span> imdb_data[<span class="st">'IMDB_Genre'</span>].<span class="bu">str</span>.split(<span class="st">','</span>).explode().<span class="bu">str</span>.strip().value_counts()</span>
+<span id="cb113-3"><a href="#cb113-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb113-4"><a href="#cb113-4" aria-hidden="true" tabindex="-1"></a>imdb_genres.head(<span class="dv">10</span>).plot(kind<span class="op">=</span><span class="st">'bar'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
+<span id="cb113-5"><a href="#cb113-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Top 10 IMDb Genres'</span>)</span>
+<span id="cb113-6"><a href="#cb113-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Genre'</span>)</span>
+<span id="cb113-7"><a href="#cb113-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Count'</span>)</span>
+<span id="cb113-8"><a href="#cb113-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb113-9"><a href="#cb113-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-10"><a href="#cb113-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Top directors by movie count</span></span>
+<span id="cb113-11"><a href="#cb113-11" aria-hidden="true" tabindex="-1"></a>douban_directors <span class="op">=</span> douban_data[<span class="st">'Douban_Info'</span>].<span class="bu">str</span>.extract(<span class="vs">r'导演: (.+?) '</span>).dropna()</span>
+<span id="cb113-12"><a href="#cb113-12" aria-hidden="true" tabindex="-1"></a>douban_top_directors <span class="op">=</span> douban_directors[<span class="dv">0</span>].value_counts().head(<span class="dv">10</span>)</span>
+<span id="cb113-13"><a href="#cb113-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-14"><a href="#cb113-14" aria-hidden="true" tabindex="-1"></a>imdb_top_directors <span class="op">=</span> imdb_data[<span class="st">'IMDB_Director'</span>].value_counts().head(<span class="dv">10</span>)</span>
+<span id="cb113-15"><a href="#cb113-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-16"><a href="#cb113-16" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb113-17"><a href="#cb113-17" aria-hidden="true" tabindex="-1"></a>douban_top_directors.plot(kind<span class="op">=</span><span class="st">'bar'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span><span class="st">'Douban'</span>, color<span class="op">=</span><span class="st">'blue'</span>)</span>
+<span id="cb113-18"><a href="#cb113-18" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Top 10 Douban Directors'</span>)</span>
+<span id="cb113-19"><a href="#cb113-19" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Director'</span>)</span>
+<span id="cb113-20"><a href="#cb113-20" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Movie Count'</span>)</span>
+<span id="cb113-21"><a href="#cb113-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb113-22"><a href="#cb113-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-23"><a href="#cb113-23" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb113-24"><a href="#cb113-24" aria-hidden="true" tabindex="-1"></a>imdb_top_directors.plot(kind<span class="op">=</span><span class="st">'bar'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>, label<span class="op">=</span><span class="st">'IMDb'</span>, color<span class="op">=</span><span class="st">'orange'</span>)</span>
+<span id="cb113-25"><a href="#cb113-25" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Top 10 IMDb Directors'</span>)</span>
+<span id="cb113-26"><a href="#cb113-26" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Director'</span>)</span>
+<span id="cb113-27"><a href="#cb113-27" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Movie Count'</span>)</span>
+<span id="cb113-28"><a href="#cb113-28" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb113-29"><a href="#cb113-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-30"><a href="#cb113-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Save overlapping movies to a CSV file</span></span>
+<span id="cb113-31"><a href="#cb113-31" aria-hidden="true" tabindex="-1"></a>overlap_movies.to_csv(<span class="st">'overlap_movies.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb113-32"><a href="#cb113-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-33"><a href="#cb113-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Print results</span></span>
+<span id="cb113-34"><a href="#cb113-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"豆瓣平均评分: </span><span class="sc">{</span>douban_avg_score<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb113-35"><a href="#cb113-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"IMDb平均评分: </span><span class="sc">{</span>imdb_avg_score<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb113-36"><a href="#cb113-36" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"重叠电影数量: </span><span class="sc">{</span><span class="bu">len</span>(overlap_movies)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-4.IMDb-and-Douban-top-250-movie-datasets-cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-4.IMDb-and-Douban-top-250-movie-datasets-cell-9-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="labs_files/figure-html/labs-Labexercises-4.IMDb-and-Douban-top-250-movie-datasets-cell-9-output-3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>豆瓣平均评分: 8.9396
+IMDb平均评分: 8.254
+重叠电影数量: 0</code></pre>
+</div>
+</div>
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
