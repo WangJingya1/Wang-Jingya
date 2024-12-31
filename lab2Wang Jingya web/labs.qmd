@@ -1,0 +1,37 @@
+---
+title: ""
+format:
+  html:
+    theme: cosmo
+    toc: false
+    code-fold: false
+    highlight-style: github
+    html-math-method: katex
+execute:
+  eval: false
+  enabled: true
+  echo: true      
+  output: true    
+  warning: false  
+  error: false    
+jupyter: python3
+---
+
+
+# Exercises-Chipotle 1
+{{< embed "labs/Labexercises/Exercises-Chipotle 1.ipynb" echo=true >}}
+
+# Exercises-chipotle 3
+{{< embed "labs/Labexercises/Exercises-chipotle 3.ipynb" echo=true >}}
+
+# Exercises-Occupation 1
+{{< embed "labs/Labexercises/Exercises-Occupation 1.ipynb" echo=true >}}
+
+# Exercises-World Food Facts 1
+{{< embed "labs/Labexercises/Exercises-World Food Facts 1.ipynb" echo=true >}}
+
+# 77fba8e3b056425013930abb11e0a970
+{{< embed "labs/Labexercises/77fba8e3b056425013930abb11e0a970.ipynb" echo=true >}}
+
+# 4.IMDb and Douban top-250 movie datasets
+{{< embed "labs/Labexercises/4.IMDb and Douban top-250 movie datasets.ipynb" echo=true >}}

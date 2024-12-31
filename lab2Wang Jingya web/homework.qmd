@@ -1,0 +1,36 @@
+---
+title: ""
+format:
+  html:
+    theme: cosmo
+    toc: false
+    code-fold: false
+    highlight-style: github
+    html-math-method: katex
+execute:
+  eval: false
+  enabled: true
+  echo: true      
+  output: true    
+  warning: false  
+  error: false    
+jupyter: python3
+---
+
+# Homework-1
+{{< embed "homework/homework_1_for_lecture_3Wang Jingya.ipynb" echo=true >}}
+
+# Homework-2
+{{< embed "homework/homework_2_for_lecture_3Wang Jingya.ipynb" echo=true >}}
+
+# homework_for_lecture_2-pet
+{{< embed "homework/homework_for_lecture_2-pet_namesWang Jingya.ipynb" echo=true >}}
+
+# homework_for_lecture_4
+{{< embed "homework/homework_for_lecture_4Wang Jingya.ipynb" echo=true >}}
+
+# IT practice and homework
+{{< embed "homework/IT practice and homework Wang Jingya.ipynb" echo=true >}}
+
+# IT practice and homework
+{{< embed "homework/Wang JIngya.ipynb" echo=true >}}

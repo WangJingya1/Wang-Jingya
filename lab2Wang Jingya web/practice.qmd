@@ -1,0 +1,22 @@
+---
+title: ""
+format:
+  html:
+    theme: cosmo
+    toc: false
+    code-fold: false
+    highlight-style: github
+    html-math-method: katex
+execute:
+  eval: false
+  enabled: true
+  echo: true      
+  output: true    
+  warning: false  
+  error: false    
+jupyter: python3
+---
+
+
+# practice1
+{{< embed "labs/Practice/Climate-change.ipynb" echo=true >}}
