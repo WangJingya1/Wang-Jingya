@@ -1,0 +1,12 @@
+{
+  "hash": "62fbbe7302a0874baf8099fade33a94b",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"\"\nformat:\n  html:\n    theme: cosmo\n    toc: false\n    code-fold: false\n    highlight-style: github\n    html-math-method: katex\nexecute:\n  eval: false\n  enabled: true\n  echo: true      \n  output: true    \n  warning: false  \n  error: false    \njupyter: python3\n---\n\n\n\n\n\n\n# practice1\n\n\n\n\n{{< embed \"labs/Practice/Climate-change.ipynb\" echo=true >}}\n\n",
+    "supporting": [
+      "practice_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

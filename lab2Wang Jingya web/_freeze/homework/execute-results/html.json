@@ -1,0 +1,12 @@
+{
+  "hash": "f5d826c80ad7a420e08ec2665155f935",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"\"\nformat:\n  html:\n    theme: cosmo\n    toc: false\n    code-fold: false\n    highlight-style: github\n    html-math-method: katex\nexecute:\n  eval: false\n  enabled: true\n  echo: true      \n  output: true    \n  warning: false  \n  error: false    \njupyter: python3\n---\n\n\n\n\n\n# Homework-1\n\n\n\n\n{{< embed \"homework/homework_1_for_lecture_3Wang Jingya.ipynb\" echo=true >}}\n\n\n\n\n\n\n\n\n# Homework-2\n\n\n\n\n{{< embed \"homework/homework_2_for_lecture_3Wang Jingya.ipynb\" echo=true >}}\n\n\n\n\n\n\n\n\n# homework_for_lecture_2-pet\n\n\n\n\n{{< embed \"homework/homework_for_lecture_2-pet_namesWang Jingya.ipynb\" echo=true >}}\n\n\n\n\n\n\n\n\n# homework_for_lecture_4\n\n\n\n\n{{< embed \"homework/homework_for_lecture_4Wang Jingya.ipynb\" echo=true >}}\n\n\n\n\n\n\n\n\n# IT practice and homework\n\n\n\n\n{{< embed \"homework/IT practice and homework Wang Jingya.ipynb\" echo=true >}}\n\n\n\n\n\n\n\n\n# IT practice and homework\n\n\n\n\n{{< embed \"homework/Wang JIngya.ipynb\" echo=true >}}\n\n",
+    "supporting": [
+      "homework_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
